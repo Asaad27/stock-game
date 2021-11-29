@@ -1,0 +1,39 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {par l {seq {space :p:131:p, comp label1:::p::p, space :p:31:p}, seq t {space :::p, comp label2:::p::p, space u:::p}}, par l {seq {comp label3:::p::p, space ::206:x}, seq {par l {comp textField_quantite:::::x, comp textField_ID::::194:x, seq t {space :0:116:x, comp valider:::p::p}}, space :p:32:p}}}}"
+			"$verticalGroup": "par l {seq t {space :p:30:p, comp label3:::p::p, space :p:62:p, par b {comp textField_ID::b:p:26:p, comp label1::b:p::p}, space u:::p, par b {comp textField_quantite::b:p:26:p, comp label2::b:p::p}, space ::72:x, comp valider:::p::p, space :p:26:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "valider"
+				"text": "valider"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "validerActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_quantite"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_ID"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "ID"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Quantité"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Vendre Action"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 410, 150 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

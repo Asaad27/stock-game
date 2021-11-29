@@ -1,0 +1,53 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :12::x, par l {comp label2:::p::p, comp label1:::p::p, comp label3::l:p::p, comp label4:::p::p}, space :p:127:p, par l:::p {comp passwordField1::l::111:x, comp tftelephone::l::111:x, comp tfemail::l::111:x, comp passwordField2::l::111:x}, space :p:73:p}, seq t {space :0:341:x, comp btregister:::p::p, space :p:25:p}, seq l {space :p:161:p, comp label5:::p::p, space ::219:x}}"
+			"$verticalGroup": "par l {seq l {space :p:21:p, comp label5:::p::p, space :p:33:p, par b {comp tfemail::b:p::p, comp label1::b:p::p}, space s:::p, par b {comp tftelephone::b:p::p, comp label2::b:p::p}, space s:::p, par b {comp passwordField1::b:p::p, comp label3::b:p::p}, space s:::p, par b {comp passwordField2::b:p::p, comp label4::b:p::p}, space ::20:x, comp btregister:::p::p, space :::p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tfemail"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btregister"
+				"text": "register"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btregisterActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tftelephone"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField1"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField2"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "email"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "telephone"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "mot de passe"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Confirmer mot de passe"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Register"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

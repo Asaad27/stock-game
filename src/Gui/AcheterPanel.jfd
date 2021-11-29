@@ -1,0 +1,44 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :p:119:p, par l {comp label1:::::x, comp label2:::::x}, space :::p, par l {seq {comp label3:::p::p, space ::151:x}, seq {par l {comp textField_quantite:::::x, comp textField_ID::::197:x, seq t {space :0:119:x, comp valider:::p::p}}, space :p:32:p}}}, seq t {space ::248:x, comp label4:::p::p, space :p:132:p}}"
+			"$verticalGroup": "par l {seq t {space :p:25:p, comp label3:::p::p, space :p:67:p, par t {seq {par b {comp textField_ID::b:p:26:p, comp label1::b:p::p}, space u:::p, comp textField_quantite:::p:26:p}, comp label2:::p::p}, space s:::p, comp label4:::p::p, space ::38:x, comp valider:::p::p, space :p:26:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "valider"
+				"text": "valider"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "validerActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_quantite"
+				addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "textField_quantitePropertyChange", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField_ID"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "ID"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Quantité"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Acheter Action"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "prix total"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
